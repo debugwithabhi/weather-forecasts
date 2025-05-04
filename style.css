@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, Times, 'Times New Roman', serif !important;
     background-color: hsl(206, 25%, 95%);
     margin: 0;
     display: flex;
@@ -93,7 +93,7 @@ p {
 .weatherEmoji {
     margin: 0;
     font-size: 6rem;
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif !important;
 }
 
 .errorDisplay {
