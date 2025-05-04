@@ -1,0 +1,130 @@
+body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: hsl(206, 25%, 95%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.weatherForm {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cityInput {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid hsla(0, 0, 20%, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);
+}
+
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 40px 20px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 6rem;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+.errorDisplay {
+    font-weight: bold;
+    font-size: 2rem;
+    color: hsla(0, 0%, 0%, 0.75);
+    text-align: center;
+}
+
+/* ✅ Responsive styles for screens smaller than 500px */
+@media (max-width: 500px) {
+    h1, .cityDisplay, .tempDisplay {
+        font-size: 2rem;
+    }
+
+    .descDisplay {
+        font-size: 1.3rem;
+    }
+
+    .weatherEmoji {
+        font-size: 4.5rem;
+    }
+
+    .errorDisplay {
+        font-size: 1.5rem;
+    }
+
+    .cityInput,
+    button[type="submit"],
+    .card {
+        width: 100%;
+        max-width: 90vw;
+    }
+}
